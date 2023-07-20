@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web3:
+    image: dockerrissi/estudos:v3
+    container_name: site
+    restart: always
+    ports: 
+      - '8026:80'
+  web2:
+    image: dockerrissi/estudos:v2
+    container_name: site2
+    restart: always
+    ports: 
+      - '8025:80'
