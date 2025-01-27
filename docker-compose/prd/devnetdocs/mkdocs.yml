@@ -3,14 +3,15 @@ nav:
   - Home: index.md
   - About: about.md
   - Docker Containers:
-      - Overview: install_docker.md
+      - Instalação: install_docker.md
       - Adguard: adguard.md
       # Additional Docker container pages...
   - Networking:
       - Overview: networking-overview.md
       - GlusterFS: glusterfs.md
   # Additional sections...
-
+  - Python:
+      - Instalação: python_linux_oracle.md
 theme:
   name: material
   logo: path/to/logo.png
