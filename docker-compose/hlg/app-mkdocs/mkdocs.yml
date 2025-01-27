@@ -1,0 +1,31 @@
+site_name: Rissi Network
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Configuration: configuration.md
+  - API: api.md
+  - Troubleshooting: troubleshooting.md
+  - Emojis: emojis.md
+
+theme:
+  name: material
+  language: pt-br
+  features:
+    - navigation.instant
+    - toc.integrate
+  palette:
+    # Dark Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+      primary: deep purple
+      accent: indigo
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite

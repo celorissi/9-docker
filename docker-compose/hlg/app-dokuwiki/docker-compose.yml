@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  dokuwiki:
+    image: linuxserver/dokuwiki
+    container_name: dokuwiki
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - dokuwiki-config:/config
+      - dokuwiki-data:/data
+    ports:
+      - 8080:80
+    restart: unless-stopped
+volumes:
+  dokuwiki-config:
+  dokuwiki-data:

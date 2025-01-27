@@ -1,0 +1,12 @@
+my-docs-project/
+    docs/
+        index.md
+        introduction.md
+        installation.md
+        usage.md
+        configuration.md
+        api.md
+        troubleshooting.md
+    mkdocs.yml
+    Dockerfile
+    docker-compose.yml

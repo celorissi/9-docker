@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mkdocs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mkdocs_container
+    ports:
+      - "8005:8000"
+    volumes:
+      - ./docs:/docs  # Mapeia o diretório local docs para dentro do container
+      - ./mkdocs.yml:/mkdocs.yml  # Mapeia o arquivo de configuração mkdocs.yml
+    environment:
+      - WITH_PLUGINS=true  # Passa a flag para habilitar a instalação de plugins
+    command: ["serve", "--dev-addr=0.0.0.0:8000"]  # Inicia o servidor de desenvolvimento do MkDocs
+    restart: unless-stopped  # O container reinicia automaticamente em caso de falha
